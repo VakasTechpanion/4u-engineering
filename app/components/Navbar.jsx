@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
@@ -7,8 +8,20 @@ export default function Navbar() {
     return (
         <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
             <div className="container mx-auto flex items-center justify-between px-6 py-3">
-                {/* Logo / Brand Name */}
-                <h1 className="text-2xl font-bold text-blue-600">4U Engineering</h1>
+                {/* Logo Section */}
+                <div className="flex items-center space-x-3">
+                    <Image
+                        src="/logo.jpg" // 👈 use .jpg here
+                        alt="4U Engineering Logo"
+                        width={45}
+                        height={45}
+                        className="object-contain rounded-md"
+                        priority
+                    />
+                    <h1 className="text-xl md:text-2xl font-bold text-blue-600">
+                        4U Engineering
+                    </h1>
+                </div>
 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex space-x-8 text-gray-800 font-medium">
@@ -33,51 +46,11 @@ export default function Navbar() {
             {/* Mobile Menu */}
             {open && (
                 <ul className="absolute top-14 left-0 w-full bg-white shadow-md flex flex-col items-center py-6 space-y-4 md:hidden text-black font-medium">
-                    <li>
-                        <a
-                            href="#home"
-                            className="text-black hover:text-blue-600 transition"
-                            onClick={() => setOpen(false)}
-                        >
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#about"
-                            className="text-black hover:text-blue-600 transition"
-                            onClick={() => setOpen(false)}
-                        >
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#services"
-                            className="text-black hover:text-blue-600 transition"
-                            onClick={() => setOpen(false)}
-                        >
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#projects"
-                            className="text-black hover:text-blue-600 transition"
-                            onClick={() => setOpen(false)}
-                        >
-                            Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#contact"
-                            className="text-black hover:text-blue-600 transition"
-                            onClick={() => setOpen(false)}
-                        >
-                            Contact
-                        </a>
-                    </li>
+                    <li><a href="#home" className="text-black hover:text-blue-600 transition" onClick={() => setOpen(false)}>Home</a></li>
+                    <li><a href="#about" className="text-black hover:text-blue-600 transition" onClick={() => setOpen(false)}>About</a></li>
+                    <li><a href="#services" className="text-black hover:text-blue-600 transition" onClick={() => setOpen(false)}>Services</a></li>
+                    <li><a href="#projects" className="text-black hover:text-blue-600 transition" onClick={() => setOpen(false)}>Projects</a></li>
+                    <li><a href="#contact" className="text-black hover:text-blue-600 transition" onClick={() => setOpen(false)}>Contact</a></li>
                 </ul>
             )}
         </nav>
