@@ -44,9 +44,9 @@ export default function ContactSection() {
                             general information. We’ll get back to you as soon as possible!
                         </p>
                         <ul className="space-y-3 text-blue-100">
-                            <li>📍 4U Engineering College, Mumbai</li>
+                            <li>📍 4U Engineering, Hyderabad</li>
                             <li>📞 +91 98765 43210</li>
-                            <li>📧 contact@4uengineering.com</li>
+                            <li>📧 contact@4uengg.com</li>
                         </ul>
                     </div>
 

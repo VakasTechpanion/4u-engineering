@@ -30,9 +30,9 @@ export default function Footer() {
                 <div>
                     <h4 className="text-xl font-semibold mb-4">Connect With Us</h4>
                     <ul className="space-y-2 text-blue-100">
-                        <li>📍 Mumbai, India</li>
+                        <li>📍 Hyderabad, India</li>
                         <li>📞 +91 98765 43210</li>
-                        <li>📧 contact@4uengineering.com</li>
+                        <li>📧 contact@4uengg.com</li>
                     </ul>
 
                     <div className="flex space-x-4 mt-4">
