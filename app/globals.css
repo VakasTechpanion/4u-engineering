@@ -20,7 +20,12 @@
 }
 
 body {
-  background: var(--background);
+  background: white;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Remove Next.js image overlay button */
+nextjs-portal {
+  display: none !important;
 }

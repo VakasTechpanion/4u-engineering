@@ -11,7 +11,7 @@ export default function Navbar() {
                 {/* Logo Section */}
                 <div className="flex items-center space-x-3">
                     <Image
-                        src="/logo.jpg" // 👈 use .jpg here
+                        src="/logo.jpeg" // 👈 use .jpg here
                         alt="4U Engineering Logo"
                         width={45}
                         height={45}
@@ -19,7 +19,7 @@ export default function Navbar() {
                         priority
                     />
                     <h1 className="text-xl md:text-2xl font-bold text-blue-600">
-                        4U Engineering
+                        4U Engineering Pvt.Ltd
                     </h1>
                 </div>
 

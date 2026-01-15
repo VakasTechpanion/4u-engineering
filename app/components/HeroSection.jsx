@@ -24,8 +24,10 @@ export default function HeroSection() {
             id="home"
             className="relative h-screen w-full flex items-center justify-center overflow-hidden"
         >
+            <h3>4U Engineering Transforming Stell Detailing & Engineering services through Generative AI, APIS , and Advanced Technology.</h3>
+            <h3>Seamless Services, Swift Responses, Trusted Communication, True Value for Your Time & Investment, Powered by a Team of Young Talent and Seasoned Professionals.</h3>
             {/* Background Carousel */}
-            <div className="absolute inset-0">
+            {/* <div className="absolute inset-0">
                 <AnimatePresence>
                     <motion.div
                         key={slides[current].image}
@@ -45,7 +47,6 @@ export default function HeroSection() {
                 </AnimatePresence>
             </div>
 
-            {/* Hero Content */}
             <div className="relative z-10 text-center text-white px-6">
                 <motion.h1
                     initial={{ opacity: 0, y: -20 }}
@@ -72,7 +73,7 @@ export default function HeroSection() {
                 >
                     Explore Our Services
                 </motion.a>
-            </div>
+            </div> */}
         </section>
     );
 }

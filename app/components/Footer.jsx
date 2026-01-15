@@ -1,53 +1,127 @@
-"use client";
-import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
+// "use client";
+// import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
+
+// export default function Footer() {
+//     return (
+//         <footer className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white pt-12 pb-6 mt-16">
+//             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+//                 {/* About Section */}
+//                 <div>
+//                     <h3 className="text-2xl font-bold mb-4">4U Engineering</h3>
+//                     <p className="text-blue-100 text-sm leading-relaxed">
+//                         Building innovative engineering solutions with precision, creativity,
+//                         and sustainability. Turning ideas into impactful realities.
+//                     </p>
+//                 </div>
+
+//                 {/* Quick Links */}
+//                 <div>
+//                     <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
+//                     <ul className="space-y-2 text-blue-100">
+//                         <li><a href="#home" className="hover:text-white">Home</a></li>
+//                         <li><a href="#about" className="hover:text-white">About</a></li>
+//                         <li><a href="#services" className="hover:text-white">Services</a></li>
+//                         <li><a href="#projects" className="hover:text-white">Projects</a></li>
+//                         <li><a href="#contact" className="hover:text-white">Contact</a></li>
+//                     </ul>
+//                 </div>
+
+//                 {/* Contact / Social */}
+//                 <div>
+//                     <h4 className="text-xl font-semibold mb-4">Connect With Us</h4>
+//                     <ul className="space-y-2 text-blue-100">
+//                         <li>📍 Hyderabad, India</li>
+//                         <li>📞 +91 98765 43210</li>
+//                         <li>📧 contact@4uengg.com</li>
+//                     </ul>
+
+//                     <div className="flex space-x-4 mt-4">
+//                         <a href="#" className="hover:text-white"><Facebook /></a>
+//                         <a href="#" className="hover:text-white"><Instagram /></a>
+//                         <a href="#" className="hover:text-white"><Linkedin /></a>
+//                         <a href="#" className="hover:text-white"><Mail /></a>
+//                     </div>
+//                 </div>
+//             </div>
+
+//             {/* Bottom Bar */}
+//             <div className="border-t border-blue-600 mt-10 pt-4 text-center text-blue-200 text-sm">
+//                 © {new Date().getFullYear()} 4U Engineering. All Rights Reserved.
+//             </div>
+//         </footer>
+//     );
+// }
+
+
+// export default function Footer() {
+//     return (
+//         <footer className="bg-white border-t border-blue-300 py-6 mt-20">
+//             <p className="text-center text-blue-800 text-sm">
+//                 © 2026 4U Engineering. All Rights Reserved.
+//             </p>
+//         </footer>
+//     );
+// }
+
 
 export default function Footer() {
-    return (
-        <footer className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white pt-12 pb-6 mt-16">
-            <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
-                {/* About Section */}
-                <div>
-                    <h3 className="text-2xl font-bold mb-4">4U Engineering</h3>
-                    <p className="text-blue-100 text-sm leading-relaxed">
-                        Building innovative engineering solutions with precision, creativity,
-                        and sustainability. Turning ideas into impactful realities.
-                    </p>
-                </div>
+  return (
+    <footer className="bg-white border-t border-blue-300 mt-20">
+      <div className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-10 text-blue-800">
 
-                {/* Quick Links */}
-                <div>
-                    <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
-                    <ul className="space-y-2 text-blue-100">
-                        <li><a href="#home" className="hover:text-white">Home</a></li>
-                        <li><a href="#about" className="hover:text-white">About</a></li>
-                        <li><a href="#services" className="hover:text-white">Services</a></li>
-                        <li><a href="#projects" className="hover:text-white">Projects</a></li>
-                        <li><a href="#contact" className="hover:text-white">Contact</a></li>
-                    </ul>
-                </div>
+        {/* Quick Links */}
+        <div>
+          <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
+          <ul className="space-y-2 text-lg">
+            <li>
+              <a href="#home" className="hover:underline">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="hover:underline">
+                About 4U
+              </a>
+            </li>
+            <li>
+              <a href="#services" className="hover:underline">
+                Services 4U
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:underline">
+                Contact 4U
+              </a>
+            </li>
+            <li>
+              <a href="#careers" className="hover:underline">
+                Careers 4U
+              </a>
+            </li>
+          </ul>
+        </div>
 
-                {/* Contact / Social */}
-                <div>
-                    <h4 className="text-xl font-semibold mb-4">Connect With Us</h4>
-                    <ul className="space-y-2 text-blue-100">
-                        <li>📍 Hyderabad, India</li>
-                        <li>📞 +91 98765 43210</li>
-                        <li>📧 contact@4uengg.com</li>
-                    </ul>
+        {/* Careers Section */}
+        <div className="md:col-span-2">
+          <p className="text-lg leading-relaxed mb-4">
+            “Join 4U. Grow with 4U. Innovate with 4U. Lead the Future with 4U.”
+          </p>
 
-                    <div className="flex space-x-4 mt-4">
-                        <a href="#" className="hover:text-white"><Facebook /></a>
-                        <a href="#" className="hover:text-white"><Instagram /></a>
-                        <a href="#" className="hover:text-white"><Linkedin /></a>
-                        <a href="#" className="hover:text-white"><Mail /></a>
-                    </div>
-                </div>
-            </div>
+          <p className="text-lg mb-2">
+            Send your CV / Resume
+          </p>
 
-            {/* Bottom Bar */}
-            <div className="border-t border-blue-600 mt-10 pt-4 text-center text-blue-200 text-sm">
-                © {new Date().getFullYear()} 4U Engineering. All Rights Reserved.
-            </div>
-        </footer>
-    );
+          <p className="text-lg font-medium">
+            hr@4uengg.com
+          </p>
+        </div>
+
+      </div>
+
+      {/* Bottom Copyright */}
+      <div className="border-t border-blue-300 py-4 text-center text-blue-800 text-sm">
+        © 2026 4U Engineering. All Rights Reserved.
+      </div>
+    </footer>
+  );
 }
