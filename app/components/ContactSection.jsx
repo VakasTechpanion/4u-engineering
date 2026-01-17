@@ -21,7 +21,7 @@ export default function ContactSection() {
 
         <p>
           <strong>Email:</strong> sales@4uengg.com <br />
-          <strong>Email:</strong> estimator@4uengg.com <br />
+          <strong>Email:</strong> estimation@4uengg.com <br />
           <strong>Phone:</strong> (We are working on this) <br />
           <strong>Address:</strong> (We are working on this)
         </p>

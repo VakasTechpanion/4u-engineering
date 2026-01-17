@@ -5,7 +5,7 @@ export default function ServicesSection() {
         4U Services
       </h2>
 
-      <div className="max-w-6xl mx-auto space-y-10 text-blue-800 text-lg">
+      <div className="max-w-6xl mx-auto space-y-10 text-blue-800 text-lg bg-gray-50 p-10 rounded-2xl shadow-sm">
         <div>
           <h3 className="text-2xl font-semibold mb-2">
             Estimation & Material Take-Off

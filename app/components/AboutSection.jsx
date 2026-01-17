@@ -2,7 +2,7 @@ export default function AboutSection() {
     return (
         <section style={{ marginTop: '100px' }}
             id="about"
-            className="py-20 px-6 bg-white flex flex-col items-center text-center"
+            className="py-24 px-6 bg-white flex flex-col items-center text-center max-w-6xl mx-auto"
         >
             <h2 className="text-4xl font-bold text-blue-800 mb-6">
                 About 4U
