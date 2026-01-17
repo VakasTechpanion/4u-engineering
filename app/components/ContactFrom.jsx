@@ -23,34 +23,9 @@ export default function ContactForm() {
             id="contact"
             className="relative py-20 bg-gradient-to-br from-blue-700 via-blue-600 to-blue-500 text-white"
         >
-            {/* Decorative background shapes */}
             <div className="absolute inset-0 opacity-10 bg-[url('/pattern.svg')] bg-cover bg-center"></div>
-
             <div className="relative z-10 max-w-6xl mx-auto px-6">
-                {/* Section Title */}
-                {/* <h2 className="text-4xl font-bold text-center mb-6">Contact Us</h2>
-                <p className="text-center text-blue-100 max-w-2xl mx-auto mb-12">
-                    Have a question, a project idea, or want to collaborate?
-                    Let’s create something amazing together. Reach out to our team below.
-                </p> */}
-
-                {/* Contact Form Container */}
                 <div className="flex flex-col md:flex-row justify-center items-center gap-10">
-                    {/* Contact Info Card */}
-                    {/* <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 text-center md:text-left md:w-1/2 shadow-lg border border-white/20">
-                        <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
-                        <p className="text-blue-100 mb-6">
-                            You can contact us for project inquiries, collaborations, or
-                            general information. We’ll get back to you as soon as possible!
-                        </p>
-                        <ul className="space-y-3 text-blue-100">
-                            <li>📍 4U Engineering, Hyderabad</li>
-                            <li>📞 +91 98765 43210</li>
-                            <li>📧 contact@4uengg.com</li>
-                        </ul>
-                    </div> */}
-
-                    {/* Contact Form */}
                     <div className="bg-white rounded-2xl shadow-xl p-8 w-full md:w-1/2">
                         <form
                             onSubmit={handleSubmit}

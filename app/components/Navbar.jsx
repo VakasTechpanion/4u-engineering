@@ -8,13 +8,12 @@ export default function Navbar() {
     return (
         <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
             <div className="container mx-auto flex items-center justify-between px-6 py-3">
-                {/* Logo Section */}
                 <div className="flex items-center space-x-3">
                     <Image
-                        src="/logo.jpeg" // 👈 use .jpg here
+                        src="/logo.jpeg"
                         alt="4U Engineering Logo"
-                        width={45}
-                        height={45}
+                        width={100}
+                        height={100}
                         className="object-contain rounded-md"
                         priority
                     />
@@ -23,7 +22,6 @@ export default function Navbar() {
                     </h1>
                 </div>
 
-                {/* Desktop Menu */}
                 <ul className="hidden md:flex space-x-8 text-gray-800 font-medium">
                     <li><a href="#home" className="hover:text-blue-600 transition">Home</a></li>
                     <li><a href="#about" className="hover:text-blue-600 transition">About</a></li>
@@ -32,7 +30,6 @@ export default function Navbar() {
                     <li><a href="#contact" className="hover:text-blue-600 transition">Contact</a></li>
                 </ul>
 
-                {/* Mobile Menu Button */}
                 <button
                     className="md:hidden flex flex-col space-y-1"
                     onClick={() => setOpen(!open)}
@@ -43,7 +40,6 @@ export default function Navbar() {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
             {open && (
                 <ul className="absolute top-14 left-0 w-full bg-white shadow-md flex flex-col items-center py-6 space-y-4 md:hidden text-black font-medium">
                     <li><a href="#home" className="text-black hover:text-blue-600 transition" onClick={() => setOpen(false)}>Home</a></li>
