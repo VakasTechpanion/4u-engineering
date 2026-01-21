@@ -17,8 +17,8 @@ export default function Navbar() {
                         className="object-contain rounded-md"
                         priority
                     />
-                    <h1 className="text-xl md:text-2xl font-bold text-blue-600">
-                        4U Engineering Pvt.Ltd
+                    <h1 className="text-base sm:text-lg md:text-2xl font-bold text-blue-600 whitespace-nowrap truncate max-w-[180px] sm:max-w-none">
+                        4U Engineering Pvt. Ltd
                     </h1>
                 </div>
 
@@ -26,7 +26,7 @@ export default function Navbar() {
                     <li><a href="#home" className="hover:text-blue-600 transition">Home</a></li>
                     <li><a href="#about" className="hover:text-blue-600 transition">About</a></li>
                     <li><a href="#services" className="hover:text-blue-600 transition">Services</a></li>
-                    <li><a href="#projects" className="hover:text-blue-600 transition">Projects</a></li>
+                    <li><a href="#careers" className="hover:text-blue-600 transition">Careers</a></li>
                     <li><a href="#contact" className="hover:text-blue-600 transition">Contact</a></li>
                 </ul>
 
