@@ -18,14 +18,9 @@ export default function ContactSection() {
           estimator will provide reliable pricing with fast, efficient
           scheduling.
         </p>
-
         <p>
           <strong>Email:</strong> sales@4uengg.com <br />
-          <strong>Email:</strong> estimation@4uengg.com <br />
-          <strong>Phone:</strong> (We are working on this) <br />
-          <strong>Address:</strong> (We are working on this)
         </p>
-
         <p>
           Or simply fill out our quick contact form and we’ll get back to you
           without delay.

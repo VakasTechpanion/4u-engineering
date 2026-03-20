@@ -10,10 +10,10 @@ export default function Navbar() {
             <div className="container mx-auto flex items-center justify-between px-6 py-3">
                 <div className="flex items-center space-x-3">
                     <Image
-                        src="/logo.jpeg"
+                        src="/logo.jpg"
                         alt="4U Engineering Logo"
-                        width={100}
-                        height={100}
+                        width={130}
+                        height={130}
                         className="object-contain rounded-md"
                         priority
                     />
