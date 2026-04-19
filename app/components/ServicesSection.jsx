@@ -1,3 +1,5 @@
+"use client";
+
 export default function ServicesSection() {
   return (
     <section id="services" className="py-20 px-6 bg-white">

@@ -1,35 +1,7 @@
 "use client";
-import { useState } from "react";
+import React from "react";
 
 export default function ContactForm() {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: "",
-    });
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(e.target);
-
-        const res = await fetch("/api/contact", {
-            method: "POST",
-            body: formData,
-        });
-
-        if (res.ok) {
-            alert("Message sent ✅");
-            e.target.reset();
-        } else {
-            alert("Failed ❌");
-        }
-    };
-
     return (
         <section className="py-20 bg-gradient-to-br from-blue-700 via-blue-600 to-blue-500 text-white">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
