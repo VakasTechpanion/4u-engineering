@@ -20,6 +20,7 @@ export default function ContactSection() {
         </p>
         <p>
           <strong>Email:</strong> sales@4uengg.com <br />
+          <strong>Phone:</strong> +1 214 831 2401
         </p>
         <p>
           Or simply fill out our quick contact form and we’ll get back to you

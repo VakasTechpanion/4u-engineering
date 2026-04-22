@@ -13,7 +13,7 @@ export default function ContactForm() {
                         Reach out for projects, partnerships, or inquiries.
                     </p>
                     <p className="text-lg font-semibold">
-                        sales@4uengg.com
+                        sales@4uengg.com / +1 214 831 2401
                     </p>
                 </div>
 

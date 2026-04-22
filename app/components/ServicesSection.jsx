@@ -9,33 +9,6 @@ export default function ServicesSection() {
 
       <div className="max-w-6xl mx-auto space-y-10 text-blue-800 text-lg bg-gray-50 p-10 rounded-2xl shadow-sm">
 
-        {/* NEW INDUSTRIAL SERVICES BLOCK */}
-        <div className="bg-white p-6 rounded-xl shadow">
-          <h3 className="text-2xl font-bold mb-3 text-blue-900">
-            Complete Industrial & Structural Steel Solutions
-          </h3>
-          <p className="mb-4 text-gray-700">
-            20+ Years of Experience in delivering reliable, high-quality steel
-            fabrication and structural solutions.
-          </p>
-
-          <ul className="list-disc list-inside space-y-1">
-            <li>All Types of Steel Fabrication & Erection</li>
-            <li>Commercial & Residential Building Structures</li>
-            <li>Industrial Shed Fabrication</li>
-            <li>Stair Railings (MS, SS & Designer)</li>
-            <li>Gates, Grills & Compound Work</li>
-            <li>Roofing Structures & Metal Sheds</li>
-            <li>Structural Steel Work (Beams, Columns & Frames)</li>
-            <li>
-              IBR & Non-IBR Piping (Design, Fabrication, Erection & Maintenance)
-            </li>
-            <li>Reduction Gearbox Supply & Maintenance</li>
-            <li>Custom Fabrication as per Drawing/Requirement</li>
-          </ul>
-        </div>
-
-        {/* EXISTING SERVICES */}
         <div>
           <h3 className="text-2xl font-semibold mb-2">
             Structural Steel Detailing
@@ -113,7 +86,30 @@ export default function ServicesSection() {
             Warehouses, Manufacturing Plants, Pipe Racks, Utility Structures.
           </p>
         </div>
+        <div>
+          <h3 className="text-2xl font-bold mb-2">
+            Complete Industrial & Structural Steel Solutions
+          </h3>
+          <p className="mb-4 text-gray-700">
+            20+ Years of Experience in delivering reliable, high-quality steel
+            fabrication and structural solutions.
+          </p>
 
+          <ul >
+            <li>All Types of Steel Fabrication & Erection</li>
+            <li>Commercial & Residential Building Structures</li>
+            <li>Industrial Shed Fabrication</li>
+            <li>Stair Railings (MS, SS & Designer)</li>
+            <li>Gates, Grills & Compound Work</li>
+            <li>Roofing Structures & Metal Sheds</li>
+            <li>Structural Steel Work (Beams, Columns & Frames)</li>
+            <li>
+              IBR & Non-IBR Piping (Design, Fabrication, Erection & Maintenance)
+            </li>
+            <li>Reduction Gearbox Supply & Maintenance</li>
+            <li>Custom Fabrication as per Drawing/Requirement</li>
+          </ul>
+        </div>
       </div>
     </section>
   );
