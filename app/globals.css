@@ -1,28 +1,70 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core surfaces */
+  --background: #0b1220;
+  --foreground: #eaf0ff;
+
+  /* Premium neutral scale (slate/ink) */
+  --surface-0: #0b1220;
+  --surface-1: #0f1a2e;
+  --surface-2: #14233d;
+  --border: rgba(255, 255, 255, 0.10);
+
+  /* Brand accents (blue → cyan) */
+  --primary: #4f8cff;
+  --primary-2: #62d0ff;
+  --primary-ink: #061226;
+
+  /* Text */
+  --muted: rgba(234, 240, 255, 0.78);
+  --subtle: rgba(234, 240, 255, 0.62);
+
+  /* Effects */
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 18px 55px rgba(0, 0, 0, 0.45);
+  --ring: 0 0 0 4px rgba(98, 208, 255, 0.18);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+
+  --color-surface-0: var(--surface-0);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-2: var(--primary-2);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b1220;
+    --foreground: #eaf0ff;
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: white;
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(79, 140, 255, 0.35), rgba(79, 140, 255, 0) 60%),
+    radial-gradient(900px 540px at 110% 10%, rgba(98, 208, 255, 0.22), rgba(98, 208, 255, 0) 55%),
+    linear-gradient(180deg, var(--surface-0), var(--surface-0));
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(98, 208, 255, 0.28);
 }
 
 /* Remove Next.js image overlay button */

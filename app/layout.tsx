@@ -2,6 +2,13 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import type { ReactNode } from "react";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans",
+});
 
 export const metadata = {
   title: "4uEngg | Engineering Solutions & Design Services",
@@ -26,7 +33,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="font-sans bg-gray-50 text-gray-900">
+      <body
+        className={`${inter.variable} font-sans bg-transparent text-[color:var(--color-foreground)]`}
+      >
         <Navbar />
         {children}
         <Footer />

@@ -6,7 +6,7 @@ import CareersSection from "./components/CareersSection";
 
 export default function Home() {
   return (
-    <main className="bg-white">
+    <main className="bg-transparent">
       <AboutSection />
       <ServicesSection />
       <ContactSection />
