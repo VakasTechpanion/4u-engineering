@@ -3,6 +3,21 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import type { ReactNode } from "react";
 
+// ✅ Import fonts
+import { Poppins, Inter } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-heading",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-body",
+});
+
 export const metadata = {
   title: "4uEngg | Engineering Solutions & Design Services",
   description:
@@ -26,7 +41,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="font-sans bg-gray-50 text-gray-900">
+      <body className="bg-gray-50 text-gray-900">
         <Navbar />
         {children}
         <Footer />
