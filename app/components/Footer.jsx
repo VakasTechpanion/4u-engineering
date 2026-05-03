@@ -41,20 +41,6 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
-        <div>
-          <h4 className="text-xl font-semibold mb-4">
-            Careers & Opportunities
-          </h4>
-
-          <p className="text-lg mb-3">
-            Interested in working with us?
-          </p>
-
-          <p className="text-lg font-semibold">
-            hr@4uengg.com
-          </p>
-        </div>
       </div>
       <div className="border-t border-blue-200 py-5 text-center text-blue-700 text-sm bg-white">
         © {new Date().getFullYear()} 4U Engineering. All Rights Reserved.
