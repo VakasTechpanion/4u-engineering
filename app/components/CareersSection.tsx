@@ -4,7 +4,7 @@ export default function CareersSection() {
     return (
         <section
             id="careers"
-            className="py-20 px-6 bg-white border-t border-blue-100"
+            className=" px-6 bg-white border-blue-100"
         >
             <div className="max-w-4xl mx-auto text-center text-blue-800">
                 <h2 className="text-4xl font-bold mb-6">
@@ -22,21 +22,6 @@ export default function CareersSection() {
                 <p className="text-lg font-semibold mb-8">
                     hr@4uengg.com
                 </p>
-
-                {/* Upload UI (no backend, UI only) */}
-                <div className="max-w-md mx-auto bg-gray-50 p-6 rounded-xl shadow">
-                    <label className="block mb-2 font-medium text-left">
-                        Upload Resume
-                    </label>
-                    <input
-                        type="file"
-                        accept=".pdf,.doc,.docx"
-                        className="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white"
-                    />
-                    <p className="text-sm text-gray-500 mt-2 text-left">
-                        Accepted formats: PDF, DOC, DOCX
-                    </p>
-                </div>
             </div>
         </section>
     );
