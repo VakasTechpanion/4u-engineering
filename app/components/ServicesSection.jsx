@@ -24,18 +24,14 @@ export default function ServicesSection() {
           <h3 className="text-2xl font-semibold mb-2">
             Main Steel Detailing
           </h3>
-          <p>
-            Beams, Columns, Bracings, Rafters, Trusses.
-          </p>
+          <p>Beams, Columns, Bracings, Rafters, Trusses.</p>
         </div>
 
         <div>
           <h3 className="text-2xl font-semibold mb-2">
             Miscellaneous Steel Detailing
           </h3>
-          <p>
-            Stairs, Railings, Ladders.
-          </p>
+          <p>Stairs, Railings, Ladders.</p>
         </div>
 
         <div>
@@ -86,30 +82,25 @@ export default function ServicesSection() {
             Warehouses, Manufacturing Plants, Pipe Racks, Utility Structures.
           </p>
         </div>
-        <div>
-          <h3 className="text-2xl font-bold mb-2">
-            Complete Industrial & Structural Steel Solutions
-          </h3>
-          <p className="mb-4 text-gray-700">
-            20+ Years of Experience in delivering reliable, high-quality steel
-            fabrication and structural solutions.
-          </p>
 
-          <ul >
-            <li>All Types of Steel Fabrication & Erection</li>
-            <li>Commercial & Residential Building Structures</li>
-            <li>Industrial Shed Fabrication</li>
-            <li>Stair Railings (MS, SS & Designer)</li>
-            <li>Gates, Grills & Compound Work</li>
-            <li>Roofing Structures & Metal Sheds</li>
-            <li>Structural Steel Work (Beams, Columns & Frames)</li>
+        {/* ✅ NEW SECTION FIXED */}
+        <div>
+          <h3 className="text-2xl font-semibold mb-2">
+            Piping & Mechanical Services
+          </h3>
+          <ul className="list-disc list-inside">
             <li>
               IBR & Non-IBR Piping (Design, Fabrication, Erection & Maintenance)
             </li>
-            <li>Reduction Gearbox Supply & Maintenance</li>
-            <li>Custom Fabrication as per Drawing/Requirement</li>
+            <li>
+              Specialisation in sugar factories and oil refinery maintenance
+            </li>
+            <li>
+              Reduction Gearbox Supply & Maintenance
+            </li>
           </ul>
         </div>
+
       </div>
     </section>
   );
