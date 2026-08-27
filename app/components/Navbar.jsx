@@ -12,7 +12,7 @@ export default function Navbar() {
                 {/* LEFT (Desktop only text) */}
                 <div className="hidden md:flex items-center space-x-3">
                     <Image
-                        src="/logo.jpg"
+                        src="/Media.jpg"
                         alt="4U Engineering Logo"
                         width={130}
                         height={130}
@@ -27,7 +27,7 @@ export default function Navbar() {
                 {/* CENTER LOGO (Mobile only) */}
                 <div className="flex md:hidden justify-center w-full">
                     <Image
-                        src="/logo.jpg"
+                        src="/Media.jpg"
                         alt="4U Engineering Logo"
                         width={100}
                         height={100}

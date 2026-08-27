@@ -9,7 +9,7 @@ export default function ContactSection() {
 
       <div className="max-w-4xl mx-auto text-blue-800 text-lg space-y-6">
         <p>
-          Reach out to us for inquiries, project discussions, or partnerships —
+          Reach out to us for enquiries, project discussions, or partnerships —
           our team will respond quickly and reliably.
         </p>
 
@@ -19,8 +19,7 @@ export default function ContactSection() {
           scheduling.
         </p>
         <p>
-          <strong>Email:</strong> sales@4uengg.com <br />
-          <strong>Phone:</strong> +1 214 831 2401
+          <strong>Phone:</strong> +1 214 443 1002
         </p>
       </div>
     </section>
