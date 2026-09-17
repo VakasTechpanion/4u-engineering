@@ -41,7 +41,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-gray-50 text-gray-900">
+      <body
+        className={`${poppins.variable} ${inter.variable} bg-[var(--background)] text-[var(--foreground)]`}
+      >
         <Navbar />
         {children}
         <Footer />
