@@ -27,6 +27,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* Headings → Premium look */
 h1,
 h2,
@@ -54,4 +60,12 @@ h2 {
 
 h3 {
   font-weight: 500;
+}
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
