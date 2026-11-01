@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Navbar from "../components/Navbar";
 import SiteShell from "../components/SiteShell";
 import ServicesSection from "../components/ServicesSection";
+import AboutSection from "../components/AboutSection";
 
 const sectionIds = ["about", "services", "careers", "contact"] as const;
 
@@ -32,7 +33,7 @@ export default async function SectionPage({
       {/* Scrollable page without visible scrollbar */}
       <main className="hide-scrollbar min-h-0 flex-1 overflow-x-hidden overflow-y-auto bg-white">
 
-        {activeSection === "about" && <AboutPage />}
+        {activeSection === "about" && <AboutSection />}
 
         {activeSection === "services" && <ServicesSection />}
 
