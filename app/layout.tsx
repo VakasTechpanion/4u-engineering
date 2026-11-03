@@ -1,6 +1,4 @@
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import type { ReactNode } from "react";
 
 // ✅ Import fonts
@@ -41,10 +39,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-gray-50 text-gray-900">
-        <Navbar />
+      <body
+        className={`${poppins.variable} ${inter.variable} flex h-dvh flex-col overflow-hidden bg-gray-50 text-gray-900`}
+      >
         {children}
-        <Footer />
       </body>
     </html>
   );
